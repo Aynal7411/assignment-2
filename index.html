@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foodies | Organic Food Store</title>
   <link rel="stylesheet" href="style.css" />
@@ -13,7 +17,7 @@
     <div class="logo">Foodies</div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" style="color: #06C167;">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Service Us</a></li>
         <li><a href="#">Our Company</a></li>
@@ -25,12 +29,19 @@
   <!-- 🍽️ Hero Section -->
 <section class="hero">
   <div class="hero-text">
-    <h1>We're Serious For Food</h1>
+    <h1 class="hero-title">
+  We're Serious <span>For Food.</span>
+</h1>
     <p>
       We strive to provide a space where guests can connect with themselves 
       and explore their full potential, offering a safe place.
     </p>
     <button class="btn">Get Started</button>
+   <div class="three-logo">
+  <i class="fab fa-apple fa-2x"></i>
+  <i class="fab fa-google fa-2x"></i>
+  <i class="fab fa-amazon fa-2x"></i>
+</div>
   </div>
 
   <div class="hero-section">
@@ -53,25 +64,25 @@
 <!-- 🌟 Features Section -->
 <section class="features">
   <div class="feature">
-    <img src="icons/shipping.png" alt="Free Shipping">
+    <i class="fas fa-shipping-fast fa-2x"></i>
     <h3>Free Shipping</h3>
     <p>Orders over $140</p>
   </div>
 
   <div class="feature">
-    <img src="icons/payment.png" alt="Quick Payment">
+    <i class="fas fa-credit-card fa-2x"></i>
     <h3>Quick Payment</h3>
     <p>100% secure payment</p>
   </div>
 
   <div class="feature">
-    <img src="icons/promo.png" alt="Special Promo">
+     <i class="fas fa-gift fa-2x"></i>
     <h3>Special Promo</h3>
     <p>Get special promo</p>
   </div>
 
   <div class="feature">
-    <img src="icons/support.png" alt="24/7 Support">
+    <i class="fas fa-headset fa-2x"></i>
     <h3>24/7 Support</h3>
     <p>Ready support</p>
   </div>
@@ -79,42 +90,37 @@
 
 
   <!-- 🥗 Benefits Section -->
- <section class="our-benefits">
-  <div class="container">
-    <div class="benefits-content">
-      
-      <!-- Left side image -->
-      <div class="benefits-image">
-        <img src="secondimange.png" alt="Our Benefits Image">
-      </div>
+<!-- 🥗 Benefits Section -->
+<section class="our-benefits">
+  <div class="container benefits-content">
 
-      <!-- Right side text content -->
-      <div class="benefits-text">
-        <h2 class="section-title">Our Benefit</h2>
-        <div class="benefit-list">
-          <div class="benefit-item">The More Healthy Food The Better</div>
-          <div class="benefit-item">Be Alive With Veggie Food.</div>
-          <div class="benefit-item">It's The Place To Be.</div>
-          <div class="benefit-item">Nonstop Veggie Food</div>
-          <div class="benefit-item">The Best Silk Dish In Town</div>
-          <div class="benefit-item">Truffles, Egg & Pumpkin Spice</div>
-        </div>
-      </div>
-
+    <!-- Left side image -->
+    <div class="benefits-image">
+      <img src="secondimange.png" alt="Our Benefits Image">
     </div>
+
+    <!-- Right side text content -->
+    <div class="benefits-text">
+      <h2 class="section-title">Our Benefit</h2>
+      <div class="benefit-list">
+        <div class="benefit-item"><i class="fas fa-check-circle"></i> The More Healthy Food The Better</div>
+        <div class="benefit-item"><i class="fas fa-check-circle"></i> Be Alive With Veggie Food.</div>
+        <div class="benefit-item"><i class="fas fa-check-circle"></i> It's The Place To Be.</div>
+        <div class="benefit-item"><i class="fas fa-check-circle"></i> Nonstop Veggie Food</div>
+        <div class="benefit-item"><i class="fas fa-check-circle"></i> The Best Silk Dish In Town</div>
+        <div class="benefit-item"><i class="fas fa-check-circle"></i> Truffles, Egg & Pumpkin Spice</div>
+      </div>
+    </div>
+
   </div>
 </section>
+
 <!-- 🌟 Our Stars Section -->
 <!-- 🌟 Our Stars Section -->
 <section class="our-stars">
   <div class="container stars-content">
     
-    <!-- Left side image -->
-    <div class="stars-image">
-      <img src="vaggiefood.png" alt="Our Stars Image">
-    </div>
-
-    <!-- Right side stats + text -->
+    <!-- Left side stats + text -->
     <div class="stars-text">
       <h2 class="stars-title">Our Stars</h2>
       <p class="stars-subtitle">Veggie Food Goes On And Always On</p>
@@ -135,6 +141,11 @@
       </div>
 
       <button class="btn stars-btn">Get Special Promo</button>
+    </div>
+
+    <!-- Right side image -->
+    <div class="stars-image">
+      <img src="vaggiefood.png" alt="Our Stars Image">
     </div>
 
   </div>
