@@ -427,55 +427,91 @@ body {
 
 
 /* Our Features Section */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 20px;
+.our-features {
+  padding: 100px 20px;
+  background: #fafafa;
   text-align: center;
 }
 
-.feature {
-  background-color: #f9f9f9;
-  border-radius: 20px;
-  padding: 40px 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #222;
+}
+.section-subtitle {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #444;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.feature img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+.feature-card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
-.feature h3 {
+.feature-card h3 {
   font-size: 20px;
-  font-weight: 700;
-  color: #27ae60;
-  margin-bottom: 10px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-top: 15px;
 }
 
-.feature p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.4;
+.feature-card p {
+  color: #666;
+  margin: 10px 0 20px;
+  font-size: 15px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #1f8a4c;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .features {
-    grid-template-columns: 1fr;
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 576px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
