@@ -182,6 +182,64 @@ body {
 
 
 /* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.feature {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.feature p {
+  color: #777;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+/* Benefits Section */
+
+
 .benefits {
   padding: 80px 80px;
   background-color: #fff;
@@ -611,60 +669,84 @@ body {
 
 
 /* ========== Hero Section ========== */
-.hero-section {
+/* Hero Section with Background Image */
+/* === Veggie Hero Section === */
+.veggie-hero {
   position: relative;
-  width: 98%;
-  height: 100vh;
-  background: url("herosection.png") center center/cover no-repeat;
+  background-image: url('fruitsimage.png'); /* 👉 replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.hero-overlay {
+/* Dark Overlay */
+.veggie-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: #02020296; /* dark overlay for contrast */
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* soft black overlay for readability */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-content {
-  position: relative;
+/* Text and Button on Image */
+.veggie-content {
   text-align: center;
-  color: #fff;
   z-index: 2;
+  color: #fff;
   max-width: 700px;
   padding: 20px;
 }
 
-.hero-title {
-  font-size: 48px;
+.veggie-content h1 {
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 25px;
-  font-family: "Poppins", sans-serif;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-.hero-btn {
+/* Get Started Button */
+.btn-veggie {
   display: inline-block;
-  background-color: #2ecc71;
+  padding: 12px 32px;
+  background-color: #66bb6a;
   color: #fff;
   text-decoration: none;
-  padding: 14px 36px;
-  border-radius: 30px;
-  font-size: 18px;
+  border-radius: 8px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
 }
 
-.hero-btn:hover {
-  background-color: #27ae60;
+.btn-veggie:hover {
+  background-color: #57a85d;
   transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .veggie-hero {
+    height: 400px;
+  }
+
+  .veggie-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn-veggie {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
 }
 
 /* Footer */
