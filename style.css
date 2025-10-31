@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #F3FCF7;
   color: #333;
   line-height: 1.6;
 }
@@ -64,7 +64,7 @@ body {
 /* LEFT CONTENT */
 .hero-text {
   flex: 1;
-  max-width: 50%;
+  max-width: 55%;
 }
 .hero-title {
   font-size: 75px;           /* Large hero text */
@@ -75,9 +75,7 @@ body {
   position: relative;
 }
 
-.hero-title span {
-  color: hsl(180, 2%, 12%);             
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -96,7 +94,7 @@ body {
 .hero-text p {
   color: #555;
   font-size: 1.1rem;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   line-height: 1.6;
 }
 
@@ -118,24 +116,23 @@ body {
 }
 .btn:hover {
   background-color: #57a85d;
-  border: #1D1D1F;
+  border: 1.5px solid #1D1D1F;
 }
 .three-logo {
   display: flex;
   justify-content: left;
   gap: 30px;      /* space between icons */
-  margin-top: 45px; /* space below button */
-  color: hsl(142, 4%, 43%);   /* Figma green or desired color */
-  
-}
-
-.three-logo i {
-  transition: transform 0.3s ease, color 0.3s ease;
+  margin-top: 60px; /* space below button */
+  color: hsl(144, 2%, 60%);   /* Figma green or desired color */
   cursor: pointer;
 }
-
-.three-logo i:hover {
+.three-logo:hover {
+  
   border: 1.5px solid #bbb0b0;       /* darker green on hover */
+}
+.three-logo i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  border: 1.5px solid #e0dcdc;  
 }
 
 /* RIGHT IMAGE SECTION */
@@ -157,11 +154,11 @@ body {
 /* Overlay container for leaf + text */
 .quality-overlay {
   position: absolute;
-  top: 25%;
-  left: 55%;
+  top: 35%;
+  left: 60%;
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 1.0px;
   background: rgba(255, 255, 255, 0.85);
   padding: 5px 15px 5px 10px;
   border-radius: 40px;
@@ -175,7 +172,7 @@ body {
 }
 
 .hero-overlay-text {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: 600;
   color: #222;
   margin: 0;
@@ -187,16 +184,23 @@ body {
 /* Rating Overlay */
 .rating-overlay {
   position: absolute;
-  bottom: 10%;
+  bottom: 35%;
   left: 0%;
   background: rgba(255, 255, 255, 0.9);
   padding: 8px 16px;
-  border-radius: 10px;
+  border-radius:20px 20px 20px 20px ;
   font-weight: 500;
-  color: #06C167;
+  color: hsl(120, 2%, 8%);
   font-size: 1rem;
 }
+.rating-overlay span {
+    color: #74a84a; /* 🌿 green color for stars */
+    background-color: hwb(140 91% 7%);
 
+}
+.rating-overlay:hover {
+   border: 2px solid hwb(240 13% 9%);
+}
 /* Responsive */
 @media (max-width: 992px) {
   .hero {
@@ -351,7 +355,8 @@ body {
 .stars-title {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 15px;
+   margin-bottom: 15px;
+   text-align: left;
 }
 
 .stars-subtitle {
@@ -359,6 +364,7 @@ body {
   color: #555;
   margin-bottom: 30px;
   font-weight: 500;
+  text-align: left;
 }
 
 .stars-grid {
@@ -366,6 +372,7 @@ body {
   gap: 20px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+ 
 }
 
 .star-card {
@@ -389,14 +396,17 @@ body {
   color: #777;
   font-weight: 400;
 }
+.btn-container {
+  display: flex;
+  justify-content: flex-start; /* Moves to the left */
+}
 
 .stars-btn {
   background-color: #27ae60;
   color: #fff;
-  border: none;
+  border: 1px solid #27ae60;
   padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 0px;
+  font-size: 20px;
   cursor: pointer;
 }
 
