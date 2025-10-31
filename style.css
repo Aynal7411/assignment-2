@@ -707,9 +707,9 @@ body {
 }
 
 .footer-col h3 {
-  color: #fff;
+  color: #181717;
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -765,14 +765,14 @@ body {
 /* Subscribe */
 .subscribe form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   margin-top: 10px;
 }
 .subscribe input {
   padding: 10px 15px;
   border: none;
-  border-radius: 6px;
+  border-radius: 0px;
   outline: none;
   font-size: 0.95rem;
 }
@@ -781,7 +781,7 @@ body {
   color: #fff;
   border: none;
   padding: 10px 15px;
-  border-radius: 6px;
+  border-radius: 1px;
   cursor: pointer;
   font-weight: 600;
   transition: 0.3s;
@@ -792,13 +792,13 @@ body {
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid #333;
+ color: #000;
   margin-top: 50px;
   padding-top: 25px;
   text-align: center;
 }
 .footer-bottom span {
-  color: #4caf50;
+  color: hsl(120, 5%, 8%);
   font-weight: 600;
 }
 
