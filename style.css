@@ -528,18 +528,20 @@ body {
 }
 
 .section-title {
-  font-size: 20px;
-  color: #74a84a;
+  font-size: 15px;
+  color: hsl(90, 4%, 10%);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .headline {
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 500;
   margin-bottom: 50px;
   color: #333;
+  text-align: left;
 }
 
 /* Product Grid */
@@ -552,10 +554,11 @@ body {
 /* Product Card */
 .product-card {
   background: #fff;
-  border-radius: 18px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   padding: 25px 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #504d4d;
+
 }
 
 .product-card:hover {
@@ -573,7 +576,7 @@ body {
 
 /* Rating Stars */
 .rating {
-  color: #f5b50a; /* Gold */
+  color: #0bda38; /* Gold */
   font-size: 18px;
   letter-spacing: 3px;
   margin-bottom: 10px;
@@ -597,19 +600,25 @@ body {
 
 /* Buy Button */
 .buy-btn {
-  background: #74a84a;
-  color: #fff;
-  border: none;
+  background: hsl(96, 20%, 95%);
+  color: hsl(120, 88%, 47%);
+  border: 1px solid hsl(120, 88%, 47%);
   padding: 10px 30px;
-  border-radius: 30px;
+  border-radius: 1px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.buy-btn::after {
+  content: '→';
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  
+}
 .buy-btn:hover {
-  background: #5b8d3b;
+  background: hsl(97, 15%, 90%);
 }
 
 /* Veggie Hero Section Style */
